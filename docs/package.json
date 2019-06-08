@@ -2,10 +2,13 @@
   "name": "workspace",
   "version": "1.0.0",
   "description": "",
+  "homepage": "https://github.com/enriqueesmith/Contact-List-using-React-and-API.github.io"
   "main": "index.js",
   "scripts": {
     "c9": "webpack-dev-server --mode development --open --host $IP --port $PORT",
     "build": "webpack --mode development"
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build",
   },
   "author": "",
   "license": "ISC",
